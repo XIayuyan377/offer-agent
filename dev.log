@@ -1,0 +1,55 @@
+
+> offer-hunter@1.0.0 dev
+> concurrently "npm run dev --prefix backend" "npm run dev --prefix frontend"
+
+(node:44316) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[0] 
+[0] > offer-hunter-backend@1.0.0 dev
+[0] > tsx watch src/index.ts
+[0] 
+[1] 
+[1] > offer-hunter-frontend@1.0.0 dev
+[1] > vite
+[1] 
+[1] 
+[1]   [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m237[22m[2m[0m ms[22m
+[1] 
+[1]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[1] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[0] 🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[0] 16:30:16 [tsx] change in ./src\services\aiService.ts Restarting...
+[0] c🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[0] 16:30:59 [tsx] change in ./src\services\aiService.ts Restarting...
+[0] c🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[0] 16:31:11 [tsx] change in ./src\routes\match.ts Restarting...
+[0] c🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[1] [2m16:32:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[1] [2m16:32:46[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mrecharts[32m[39m
+[1] [2m16:32:46[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[1] [2m16:32:46[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/App.tsx[22m Could not Fast Refresh ("STEPS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[1] [2m16:32:46[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/App.tsx[22m
+[0] [2026-06-14T08:32:53.231Z] GET /api/health
+[0] 16:39:33 [tsx] change in ./src\services\aiService.ts Restarting...
+[0] c🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[0] 16:41:03 [tsx] change in ./src\services\aiService.ts Restarting...
+[0] c🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[0] 16:41:27 [tsx] change in ./src\routes\optimize.ts Restarting...
+[0] c🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[0] 16:41:35 [tsx] change in ./src\routes\interview.ts Restarting...
+[0] c🌿 Offer捕手后端服务已启动: http://localhost:3001
+[0] 📡 AI Model: deepseek-chat
+[1] [2m16:43:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[1] [2m16:43:26[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/App.tsx[22m Could not Fast Refresh ("STEPS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[1] [2m16:43:26[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/App.tsx[22m
+[1] [2m16:43:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[1] [2m16:43:29[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/App.tsx[22m Could not Fast Refresh ("STEPS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[1] [2m16:43:29[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/App.tsx[22m
+[1] npm run dev --prefix frontend exited with code 1

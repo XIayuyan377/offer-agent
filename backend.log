@@ -1,0 +1,560 @@
+🌿 Offer捕手后端服务已启动: http://localhost:3001
+📡 AI Provider: 智谱GLM
+🧠 AI Model: glm-4-flash
+[2026-06-14T11:30:36.142Z] POST /api/optimize
+[aiService] AI provider detected: 智谱GLM, model: glm-4-flash
+[aiService] [optimize] 尝试AI调用(30s超时), prompt长度: 2048, 模式: targeted
+[2026-06-14T11:30:47.955Z] POST /api/optimize
+[aiService] [optimize] 尝试AI调用(30s超时), prompt长度: 2048, 模式: targeted
+[aiService] [optimize] AI不可用(timeout), 使用智能mock数据
+[aiService] [optimize] AI不可用(timeout), 使用智能mock数据
+[aiService] AI 返回内容长度: 1550, 前300字: ```json
+{
+  "suggestions": [
+    {
+      "section": "实习经历-示例科技公司",
+      "original": "示例科技公司 · 产品实习生 · 主导 2 个功能上线",
+      "issue": "缺乏量化数据和具体成果描述",
+      "advice": "使用 STAR 法则描述具体成果，包括情境、任务、行动和结果",
+      "rewritten": "在示例科技公司担任产品实习生，主导了用户增长功能的设计与上线，成功提升了用户活跃度 20%，实现了 15% 的月度增长。"
+    },
+    {
+      "
+[aiService] AI 返回内容长度: 1440, 前300字: ```json
+{
+  "suggestions": [
+    {
+      "section": "实习经历-示例科技公司",
+      "original": "示例科技公司 · 产品实习生 · 主导 2 个功能上线",
+      "issue": "缺乏量化数据和具体成果描述",
+      "advice": "使用 STAR 法则描述具体成果，并量化成果",
+      "rewritten": "在示例科技公司担任产品实习生，主导了用户增长功能的设计与上线，成功提升了用户活跃度 20%，并实现了 15% 的月度增长。"
+    },
+    {
+      "section
+[2026-06-14T11:45:54.389Z] POST /api/resume/parse
+[aiService] AI 返回内容长度: 1003, 前300字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科/硕士",
+    "graduationYear": 2025
+  },
+  "education": [
+    "中山大学工商管理本科，GPA 4.0/5.0",
+    "中山大学金融学硕士，研究方向金融市场运营与风险管理"
+  ],
+  "internships": [
+    "小鸭子电商有限公司电商运营实习生，维护好评率98%以上",
+    "鸭鸭科技有限公司产品运营实习生，发布内
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1003, 清洗后长度: 633, 前150字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科/硕士",
+    "graduationYear": 2025
+  },
+  "education
+[2026-06-14T11:47:37.581Z] POST /api/jd/parse
+[aiService] AI 返回内容长度: 799, 前300字: {
+  "company": "",
+  "position": "toB/toG平台产品策划和运营",
+  "type": "social",
+  "city": "",
+  "responsibilities": [
+    "负责toB/toG平台产品的策划和运营，实现产品增长和商业化目标",
+    "关注行业生态和同类产品动向，制定行业合作和市场运营方案",
+    "持续关注云计算发展趋势，落地技术产品",
+    "构建业务数据监控体系、IT支持及客服体系，提升销售转化效率",
+    "进行业务调研和客户反馈收集，推进销售或客户的痛点问题解决"
+  ],
+  "required
+[aiService] safeParseJSON 输入长度: 799, 清洗后长度: 799, 前150字: {
+  "company": "",
+  "position": "toB/toG平台产品策划和运营",
+  "type": "social",
+  "city": "",
+  "responsibilities": [
+    "负责toB/toG平台产品的策划和运营，实现产品增长和商业化目标",
+[2026-06-14T11:48:14.958Z] POST /api/match/analyze
+[2026-06-14T11:48:15.275Z] POST /api/match/analyze
+[aiService] AI 返回内容长度: 1419, 前300字: ```json
+{
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和电商运营经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    { "name": "技能匹配", "score": 18, "max": 25 },
+    { "name": "经历匹配", "score": 22, "max": 30 },
+    { "name": "关键词覆盖", "score": 9, "max": 15 },
+  
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1419, 清洗后长度: 1407, 前150字: {
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和电商运营经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    
+[aiService] AI 返回内容长度: 1739, 前300字: ```json
+{
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和产品运营经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    { "name": "技能匹配", "score": 18, "max": 25 },
+    { "name": "经历匹配", "score": 22, "max": 30 },
+    { "name": "关键词覆盖", "score": 9, "max": 15 },
+  
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1739, 清洗后长度: 1727, 前150字: {
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和产品运营经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    
+[2026-06-14T11:49:41.379Z] POST /api/optimize
+[aiService] [optimize] 尝试AI调用(30s超时), prompt长度: 2636, 模式: targeted
+[aiService] [optimize] AI不可用(timeout), 使用智能mock数据
+[aiService] AI 返回内容长度: 1719, 前300字: {
+  "suggestions": [
+    {
+      "section": "实习经历-小鸭子电商有限公司电商运营实习生",
+      "original": "小鸭子电商有限公司电商运营实习生，维护好评率98%以上",
+      "issue": "缺乏量化数据，未突出具体贡献",
+      "advice": "使用STAR法则描述具体成果，突出贡献",
+      "rewritten": "在电商运营实习期间，通过优化运营策略，将平台好评率提升至98%，实现同比增长15%。"
+    },
+    {
+      "section": "实习经历-鸭鸭科技有限公司产品
+[2026-06-14T11:51:29.613Z] POST /api/interview/questions
+[2026-06-14T11:51:29.625Z] POST /api/interview/questions
+[aiService] 面试问题生成失败: InternalServerError: 500 操作失败
+    at APIError.generate (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\error.ts:100:14)
+    at OpenAI.makeStatusError (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:462:21)
+    at OpenAI.makeRequest (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:526:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async doCall (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:383:26)
+    at async callAI (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:407:12)
+    at async generateInterviewQuestions (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:1261:21)
+    at async <anonymous> (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\routes\interview.ts:14:20) {
+  status: 500,
+  headers: {
+    connection: 'keep-alive',
+    'content-type': 'application/json; charset=UTF-8',
+    date: 'Sun, 14 Jun 2026 12:01:01 GMT',
+    'set-cookie': 'acw_tc=2f6a1fb317814382710771540eab3b49c98b2b3fb77e9a75ef8fc0d54ba9b8;path=/;HttpOnly;Max-Age=1800',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'transfer-encoding': 'chunked',
+    vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+    'x-log-id': '2026061419575152badd988cdb474e'
+  },
+  request_id: undefined,
+  error: { code: '500', message: '操作失败' },
+  code: '500',
+  param: undefined,
+  type: undefined
+}
+[aiService] 面试问题生成失败: InternalServerError: 500 操作失败
+    at APIError.generate (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\error.ts:100:14)
+    at OpenAI.makeStatusError (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:462:21)
+    at OpenAI.makeRequest (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:526:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async doCall (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:383:26)
+    at async callAI (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:407:12)
+    at async generateInterviewQuestions (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:1261:21)
+    at async <anonymous> (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\routes\interview.ts:14:20) {
+  status: 500,
+  headers: {
+    connection: 'keep-alive',
+    'content-type': 'application/json; charset=UTF-8',
+    date: 'Sun, 14 Jun 2026 12:01:01 GMT',
+    'set-cookie': 'acw_tc=784e2cb317814382713012684ef2fdbd394feb925ec4e923e7b7dd86d52514;path=/;HttpOnly;Max-Age=1800',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'transfer-encoding': 'chunked',
+    vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+    'x-log-id': '20260614195751d0b666469f3f4bf0'
+  },
+  request_id: undefined,
+  error: { code: '500', message: '操作失败' },
+  code: '500',
+  param: undefined,
+  type: undefined
+}
+[2026-06-14T12:08:08.189Z] POST /api/resume/parse
+[aiService] AI 返回内容长度: 990, 前300字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科、硕士",
+    "graduationYear": 2025
+  },
+  "education": [
+    "中山大学工商管理本科，GPA 4.0/5.0",
+    "中山大学金融学硕士，研究方向金融市场运营与风险管理"
+  ],
+  "internships": [
+    "小鸭子电商有限公司电商运营实习生，负责评论回复与舆情监控",
+    "鸭鸭科技有限公司产品运营实习生，协助
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 990, 清洗后长度: 640, 前150字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科、硕士",
+    "graduationYear": 2025
+  },
+  "education
+[2026-06-14T12:09:29.831Z] POST /api/jd/parse
+[aiService] AI 返回内容长度: 771, 前300字: {
+  "company": "",
+  "position": "toB/toG平台产品策划和运营",
+  "type": "social",
+  "city": "",
+  "responsibilities": [
+    "负责toB/toG平台产品的策划和运营，实现产品增长和商业化目标",
+    "关注行业生态和同类产品动向，制定行业合作和市场运营方案",
+    "持续关注云计算发展趋势，落地技术产品",
+    "构建业务数据监控体系、IT支持及客服体系，提升销售转化效率",
+    "进行业务调研和客户反馈收集，推进销售或客户的痛点问题解决"
+  ],
+  "required
+[aiService] safeParseJSON 输入长度: 771, 清洗后长度: 771, 前150字: {
+  "company": "",
+  "position": "toB/toG平台产品策划和运营",
+  "type": "social",
+  "city": "",
+  "responsibilities": [
+    "负责toB/toG平台产品的策划和运营，实现产品增长和商业化目标",
+[2026-06-14T12:10:07.205Z] POST /api/match/analyze
+[2026-06-14T12:10:07.514Z] POST /api/match/analyze
+[aiService] AI 返回内容长度: 1380, 前300字: ```json
+{
+  "totalScore": 85,
+  "level": "high",
+  "suggestion": "建议直接投递，突出相关实习和项目经验。",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    { "name": "技能匹配", "score": 18, "max": 25 },
+    { "name": "经历匹配", "score": 22, "max": 30 },
+    { "name": "关键词覆盖", "score": 9, "max": 15 },
+
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1380, 清洗后长度: 1368, 前150字: {
+  "totalScore": 85,
+  "level": "high",
+  "suggestion": "建议直接投递，突出相关实习和项目经验。",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+  
+[2026-06-14T12:10:51.439Z] POST /api/optimize
+[aiService] [optimize] 尝试AI调用(30s超时), prompt长度: 2615, 模式: targeted
+[aiService] AI 返回内容长度: 1392, 前300字: ```json
+{
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和项目经验，针对岗位需求定制简历。",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    { "name": "技能匹配", "score": 18, "max": 25 },
+    { "name": "经历匹配", "score": 22, "max": 30 },
+    { "name": "关键词覆盖", "score": 9, "max"
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1392, 清洗后长度: 1380, 前150字: {
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和项目经验，针对岗位需求定制简历。",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 
+[aiService] [optimize] AI不可用(timeout), 使用智能mock数据
+[2026-06-14T12:11:24.942Z] POST /api/interview/questions
+[2026-06-14T12:11:24.943Z] POST /api/interview/questions
+[aiService] AI 返回内容长度: 1714, 前300字: ```json
+{
+  "suggestions": [
+    {
+      "section": "实习经历-小鸭子电商有限公司",
+      "original": "小鸭子电商有限公司电商运营实习生，负责评论回复与舆情监控",
+      "issue": "缺乏量化数据和具体成果描述",
+      "advice": "增加数据成果，量化工作成果，使用 STAR 法则描述",
+      "rewritten": "在担任小鸭子电商有限公司电商运营实习生期间，通过优化评论回复策略，提升用户满意度10%，并成功监控并处理负面舆情，降低客户流失率5%。"
+    },
+    {
+
+[aiService] 面试问题生成失败: InternalServerError: 500 操作失败
+    at APIError.generate (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\error.ts:100:14)
+    at OpenAI.makeStatusError (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:462:21)
+    at OpenAI.makeRequest (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:526:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async doCall (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:383:26)
+    at async callAI (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:407:12)
+    at async generateInterviewQuestions (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:1261:21)
+    at async <anonymous> (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\routes\interview.ts:14:20) {
+  status: 500,
+  headers: {
+    connection: 'keep-alive',
+    'content-type': 'application/json; charset=UTF-8',
+    date: 'Sun, 14 Jun 2026 12:20:56 GMT',
+    'set-cookie': 'acw_tc=2f6a1faa17814394666738568eb0dc3e4fd5eb3b36ba856fff9db357903a14;path=/;HttpOnly;Max-Age=1800',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'transfer-encoding': 'chunked',
+    vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+    'x-log-id': '20260614201746ebfd1113ad414010'
+  },
+  request_id: undefined,
+  error: { code: '500', message: '操作失败' },
+  code: '500',
+  param: undefined,
+  type: undefined
+}
+[aiService] 面试问题生成失败: InternalServerError: 500 操作失败
+    at APIError.generate (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\error.ts:100:14)
+    at OpenAI.makeStatusError (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:462:21)
+    at OpenAI.makeRequest (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\node_modules\openai\src\core.ts:526:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async doCall (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:383:26)
+    at async callAI (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:407:12)
+    at async generateInterviewQuestions (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\services\aiService.ts:1261:21)
+    at async <anonymous> (c:\黑客松穿搭\腾讯求职新\offer-hunter\backend\src\routes\interview.ts:14:20) {
+  status: 500,
+  headers: {
+    connection: 'keep-alive',
+    'content-type': 'application/json; charset=UTF-8',
+    date: 'Sun, 14 Jun 2026 12:20:56 GMT',
+    'set-cookie': 'acw_tc=2f6a1fac17814394665211348e8eea5b0a162b5f10f07e5361bcd9493e4099;path=/;HttpOnly;Max-Age=1800',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'transfer-encoding': 'chunked',
+    vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+    'x-log-id': '20260614201746bb8b729d58c34ec1'
+  },
+  request_id: undefined,
+  error: { code: '500', message: '操作失败' },
+  code: '500',
+  param: undefined,
+  type: undefined
+}
+[2026-06-14T12:25:02.152Z] GET /api/history
+[2026-06-14T12:25:02.416Z] GET /api/history
+[2026-06-14T12:25:20.832Z] POST /api/resume/parse
+[aiService] AI 返回内容长度: 991, 前300字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科、硕士",
+    "graduationYear": 2025
+  },
+  "education": [
+    "中山大学工商管理本科，GPA 4.0/5.0",
+    "中山大学金融学硕士，研究方向金融市场运营与风险管理"
+  ],
+  "internships": [
+    "小鸭子电商有限公司电商运营实习生，提升店铺好评率至98%",
+    "鸭鸭科技有限公司产品运营实习生，发布
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 991, 清洗后长度: 634, 前150字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科、硕士",
+    "graduationYear": 2025
+  },
+  "education
+[2026-06-14T12:25:55.535Z] POST /api/history
+[2026-06-14T12:27:34.171Z] POST /api/resume/parse
+[aiService] AI 返回内容长度: 1007, 前300字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科、硕士",
+    "graduationYear": 2025
+  },
+  "education": [
+    "中山大学工商管理本科，GPA 4.0/5.0",
+    "中山大学金融学硕士，研究方向金融市场运营与风险管理"
+  ],
+  "internships": [
+    "小鸭子电商有限公司电商运营实习生，负责评论回复与舆情监控",
+    "鸭鸭科技有限公司产品运营实习生，协助
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1007, 清洗后长度: 631, 前150字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理、金融学",
+    "education": "本科、硕士",
+    "graduationYear": 2025
+  },
+  "education
+[2026-06-14T12:28:16.950Z] POST /api/history
+[2026-06-14T12:33:59.500Z] POST /api/jd/parse
+[aiService] AI 返回内容长度: 770, 前300字: {
+  "company": "",
+  "position": "toB/toG平台产品策划和运营",
+  "type": "social",
+  "city": "",
+  "responsibilities": [
+    "负责toB/toG平台产品的策划和运营，提供具有竞争力的产品方案",
+    "关注行业生态和同类产品动向，制定行业合作和市场运营方案",
+    "持续关注云计算发展趋势，落地技术产品",
+    "构建业务数据监控体系、IT支持及客服体系、渠道和营销体系",
+    "进行业务调研和客户反馈收集，推进销售或客户的痛点问题解决"
+  ],
+  "requiredS
+[aiService] safeParseJSON 输入长度: 770, 清洗后长度: 770, 前150字: {
+  "company": "",
+  "position": "toB/toG平台产品策划和运营",
+  "type": "social",
+  "city": "",
+  "responsibilities": [
+    "负责toB/toG平台产品的策划和运营，提供具有竞争力的产品方案",
+[2026-06-14T12:34:24.545Z] POST /api/history
+[2026-06-14T12:35:34.236Z] POST /api/match/analyze
+[2026-06-14T12:35:34.238Z] POST /api/match/analyze
+[aiService] AI 返回内容长度: 1363, 前300字: ```json
+{
+  "totalScore": 78,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和产品策划经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    { "name": "技能匹配", "score": 18, "max": 25 },
+    { "name": "经历匹配", "score": 22, "max": 30 },
+    { "name": "关键词覆盖", "score": 9, "max": 15 },
+  
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1363, 清洗后长度: 1351, 前150字: {
+  "totalScore": 78,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和产品策划经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 13, "max": 15 },
+    
+[2026-06-14T12:36:16.555Z] POST /api/history
+[aiService] AI 返回内容长度: 1359, 前300字: ```json
+{
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和电商平台经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 14, "max": 15 },
+    { "name": "技能匹配", "score": 20, "max": 25 },
+    { "name": "经历匹配", "score": 25, "max": 30 },
+    { "name": "关键词覆盖", "score": 10, "max": 15 },
+ 
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 1359, 清洗后长度: 1347, 前150字: {
+  "totalScore": 80,
+  "level": "high",
+  "suggestion": "建议突出数据分析能力和电商平台经验",
+  "dimensions": [
+    { "name": "基础背景匹配", "score": 14, "max": 15 },
+    
+[2026-06-14T12:36:17.094Z] POST /api/history
+[2026-06-14T12:37:17.995Z] POST /api/optimize
+[aiService] [optimize] 尝试AI调用(30s超时), prompt长度: 2605, 模式: targeted
+[aiService] [optimize] AI不可用(timeout), 使用智能mock数据
+[2026-06-14T12:37:48.005Z] POST /api/history
+[aiService] AI 返回内容长度: 1485, 前300字: ```json
+{
+  "suggestions": [
+    {
+      "section": "实习经历-小鸭子电商有限公司",
+      "original": "小鸭子电商有限公司电商运营实习生，负责评论回复与舆情监控",
+      "issue": "缺乏量化数据和具体成果描述",
+      "advice": "增加数据成果，使用 STAR 法则描述具体工作内容",
+      "rewritten": "在电商运营实习期间，通过优化评论回复策略，将用户满意度提升至90%，并有效监控舆情，降低负面评论率20%。"
+    },
+    {
+      "section"
+[2026-06-14T12:39:16.153Z] POST /api/interview/questions
+[2026-06-14T12:39:16.155Z] POST /api/interview/questions
+[2026-06-14T12:40:09.973Z] GET /api/history
+[2026-06-14T12:40:10.248Z] GET /api/history
+[2026-06-14T12:41:42.269Z] GET /api/history
+[2026-06-14T12:41:42.360Z] GET /api/history
+[aiService] AI 返回内容长度: 5704, 前300字: ```json
+{
+  "resumeDeep": [
+    {
+      "id": "rd-1",
+      "category": "resumeDeep",
+      "question": "请详细介绍一下你在中山大学xx学院校级大创项目中的角色和贡献。",
+      "difficulty": "medium",
+      "intent": "考察候选人对自身经历的熟悉程度和复盘能力",
+      "framework": {
+        "method": "STAR 法则（情境-任务-行动-结果）",
+        "keyPoints": ["明确项目背
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 5704, 清洗后长度: 5692, 前150字: {
+  "resumeDeep": [
+    {
+      "id": "rd-1",
+      "category": "resumeDeep",
+      "question": "请详细介绍一下你在中山大学xx学院校级大创项目中的角色和贡献。",
+      "difficulty":
+[2026-06-14T12:42:00.032Z] POST /api/history
+[aiService] AI 返回内容长度: 5791, 前300字: ```json
+{
+  "resumeDeep": [
+    {
+      "id": "rd-1",
+      "category": "resumeDeep",
+      "question": "请详细介绍一下你在中山大学xx学院校级大创项目中的角色和贡献。",
+      "difficulty": "medium",
+      "intent": "考察候选人对自身经历的熟悉程度和复盘能力",
+      "framework": {
+        "method": "STAR 法则（情境-任务-行动-结果）",
+        "keyPoints": ["明确项目背
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 5791, 清洗后长度: 5779, 前150字: {
+  "resumeDeep": [
+    {
+      "id": "rd-1",
+      "category": "resumeDeep",
+      "question": "请详细介绍一下你在中山大学xx学院校级大创项目中的角色和贡献。",
+      "difficulty":
+[2026-06-14T12:42:01.881Z] POST /api/history
+[2026-06-14T12:43:04.088Z] GET /api/history
+[2026-06-14T12:43:04.356Z] GET /api/history
+[2026-06-14T12:44:22.087Z] POST /api/resume/parse
+[aiService] AI 返回内容长度: 991, 前300字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理",
+    "education": "本科",
+    "graduationYear": 2025
+  },
+  "education": [
+    "中山大学工商管理本科，GPA 4.0/5.0",
+    "中山大学金融学硕士，研究方向金融市场运营与风险管理"
+  ],
+  "internships": [
+    "小鸭子电商有限公司电商运营实习生，提升店铺好评率至98%以上",
+    "鸭鸭科技有限公司产品运营实习生，发布内容50+
+[aiService] 已截断 JSON 后的多余文本
+[aiService] safeParseJSON 输入长度: 991, 清洗后长度: 636, 前150字: {
+  "basic": {
+    "name": "鸭鸭",
+    "school": "中山大学",
+    "major": "工商管理",
+    "education": "本科",
+    "graduationYear": 2025
+  },
+  "education": [
+  
+[2026-06-14T12:45:02.286Z] POST /api/history
+[2026-06-14T12:45:13.635Z] GET /api/health
+[2026-06-14T12:45:28.741Z] GET /api/history
+[2026-06-14T12:45:29.463Z] POST /api/history
